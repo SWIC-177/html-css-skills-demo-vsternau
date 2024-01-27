@@ -1,0 +1,37 @@
+html {
+    font-size: 12px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+background-color:gainsboro;}
+
+h1 {
+    font-size: 35px;
+color:darkblue;
+}
+
+h2 {
+    font-size: 20px;
+    color:deepskyblue;   
+}
+
+h3 {
+    font-size: 20px;
+    color:blueviolet;
+}
+
+h4 {
+    font-size: 20px;
+    color:indigo;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 0 20px 20px;
+    border: 5px solid black;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }

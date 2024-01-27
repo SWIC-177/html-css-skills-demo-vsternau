@@ -4,7 +4,99 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML-CSS Template</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Victoria's Bio</title>
   </head>
-  <body></body>
+  <body>
+
+    <h1>Victoria’s Bio</h1>
+<p>
+  <img src="family.jpg" alt="My Family" width="500px" /><br><br>
+  Hello! My name is Tori and this is my bio! I am 31 years old, 
+  married with two small kids. I was born in Virginia and moved to 
+  Illinois when I was 4. I currently live in New Baden, but previously
+   lived in Belleville. <br><br></p>
+
+<h2>Favorites</h2>
+
+<p>Here are some of my favorite things:<br>
+<ul>
+  <li>My Family</li>
+  <li>My Friends</li>
+  <li>Coffee</li>
+  <li>Pizza</li>
+</ul>
+
+</p>
+
+<h3>Random Facts</h3>
+<p>I am totally new to the coding world! It’s a lot of information, so I’m taking it in one step at a time. 
+   I used to do photography on the side. I love traveling, but don’t get to do it often. I took my boys to Disney in November 2022 
+   and they wouldn’t ride a single ride. We have a new puppy that hates my husband.
+    We are also going to Monster Jam on Sunday. Woohoo!<br><br>
+<br>
+<img src="disney2.jpg" alt="Disney" width="300px "/>
+<br><br>
+<center> <a href = "mailto: victoria.sternau@student.swic.edu">Send Email</a></center>
+<br><br></p>
+
+
+<form>
+
+<h4>Contact Me</h4>
+
+<label for="firstname">First name:</label><br>
+<input type="text" id="firstname" name="firstname"><br>
+<label for="lastname">Last name:</label><br>
+<input type="text" id="lastname" name="lastname">
+<br>
+<br>
+<fieldset>
+
+    <legend> Did you find this interesting?</legend>
+    <ul>
+      <li>
+        <label for="title_1">
+          <input type="radio" id="title_1" name="title" value="Yes" />
+          Yes
+        </label>
+      </li>
+      <li>
+        <label for="title_2">
+          <input type="radio" id="title_2" name="title" value="No" />
+         No
+        </label>
+      </li>
+    </ul>
+  </fieldset>
+<br>
+
+<label for="down">
+      <span>Your Favorite Part</span>
+    </label>
+    <select id="down" name="favpart">
+      <option value="favorites">Favorites</option>
+      <option value="general">General</option>
+      <option value="contact">Contact Area</option>
+<option value="random">Random Facts</option>
+ 
+    </select>
+<br>
+<br>
+<label for="comments">Comments:</label>
+
+<textarea id="comments" name="comments" rows="4" cols="50">
+
+</textarea>
+<br><br>
+<section>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+</section>
+
+</form>
+
+  </body>
 </html>
