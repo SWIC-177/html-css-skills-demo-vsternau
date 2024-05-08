@@ -12,3 +12,6 @@ const formEls = [
     document.querySelector("#comments"),
 ];
 console.log(formEls);
+
+const submitButton = document.querySelector("button");
+console.log(submitButton);
