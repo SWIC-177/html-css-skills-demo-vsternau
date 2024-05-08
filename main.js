@@ -11,9 +11,4 @@ const formEls = [
     ...Array.from(document.querySelectorAll("input")),
     document.querySelector("#comments"),
 ];
-
 console.log(formEls);
-
-const submitBtn = document.querySelector("button");
-
-console.log(submitBtn);
