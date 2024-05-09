@@ -9,87 +9,116 @@
     <title>Victoria's Bio</title>
   </head>
 
-<body class="bg-slate-600">
+  <body class="bg-slate-600">
+    <header
+      class="container mx-auto flex items-center justify-center gap-x-3 bg-pink-200 p-6"
+    >
+      <img
+        src="family.jpg"
+        alt="My Family"
+        width="200px"
+        height="200px"
+        class="rounded-full"
+      />
 
-  <header class="container mx-auto flex items-center justify-center bg-pink-200 p-6 gap-x-3">
-     <img src="family.jpg" alt="My Family" width="200px" height="200px" class="rounded-full" />
-   <div class="content-center"><h1 class="text-xl font-bold text-center">
-    Victoria Sternau</h1> </div> </header>
+      <!-- ? {victoria}: Is this doing anything without `flex`? -->
+      <div class="content-center">
+        <h1 class="text-center text-xl font-bold">Victoria Sternau</h1>
+      </div>
+    </header>
 
-  <main class="text-white p-6 text-center">
-    <section class="*:mb-3">
-  <p>
-  Hello! My name is Tori and this is my bio! I am 31 years old, 
-  married with two small kids. I was born in Virginia and moved to 
-  Illinois when I was 4. I currently live in New Baden, but previously
-   lived in Belleville. 
-  </p>
-  
-    <h2 class="text-xl font-semibold mb-3 border-b-2 text-black">Favorites</h2>
+    <main class="p-6 text-center text-white">
+      <section class="*:mb-3">
+        <p>
+          Hello! My name is Tori and this is my bio! I am 31 years old, married
+          with two small kids. I was born in Virginia and moved to Illinois when
+          I was 4. I currently live in New Baden, but previously lived in
+          Belleville.
+        </p>
 
-<p>Here are some of my favorite things:
-<ul>
-  <li>My Family</li>
-  <li>My Friends</li>
-  <li>Coffee</li>
-  <li>Pizza</li>
-</ul>
+        <h2 class="mb-3 border-b-2 text-xl font-semibold text-black">
+          Favorites
+        </h2>
 
-</p>
+        <p>Here are some of my favorite things:</p>
 
-<h3 class="text-lg italic mb-3 border-b-2 text-black">Random Facts</h3>
-<p>I am totally new to the coding world! It’s a lot of information, so I’m taking it in one step at a time. 
-   I used to do photography on the side. I love traveling, but don’t get to do it often. I took my boys to Disney in November 2022 
-   and they wouldn’t ride a single ride. We have a new puppy that hates my husband.
-    We are also going to Monster Jam on Sunday. Woohoo!</p>
-  </section>
+        <ul>
+          <li>My Family</li>
+          <li>My Friends</li>
+          <li>Coffee</li>
+          <li>Pizza</li>
+        </ul>
 
+        <h3 class="mb-3 border-b-2 text-lg italic text-black">Random Facts</h3>
+        <p>
+          I am totally new to the coding world! It’s a lot of information, so
+          I’m taking it in one step at a time. I used to do photography on the
+          side. I love traveling, but don’t get to do it often. I took my boys
+          to Disney in November 2022 and they wouldn’t ride a single ride. We
+          have a new puppy that hates my husband. We are also going to Monster
+          Jam on Sunday. Woohoo!
+        </p>
+      </section>
 
+      <form class="flex-col gap-y-3 text-black">
+        <h3 class="mb-3 border-b-2 text-lg italic text-black">Contact Me</h3>
 
-  <form class="flex-col gap-y-3 text-black">
+        <div>
+          <label class="sr-only" for="firstname">First name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+          />
+        </div>
 
-  <h3 class="text-lg italic mb-3 border-b-2 text-black">Contact Me</h3>
+        <div>
+          <label for="lastname" class="sr-only">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last Name"
+          />
+        </div>
 
-<div>
-<label class="sr-only" for="firstname">First name:</label>
-<input type="text" id="firstname" name="firstname"  placeholder="First Name">
-</div>
+        <div>
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <p class="error is-error">Please enter a valid email address.</p>
+        </div>
 
-<div>
-<label for="lastname" class="sr-only">Last Name</label>
-<input type="text" id="lastname" name="lastname"  placeholder="Last Name">
-</div>
+        <div>
+          <label for="comments" class="sr-only mt-5">Comments</label>
+          <textarea id="comments" placeholder="Comments"></textarea>
+        </div>
 
-<div>
-<label for="email" class="sr-only">Email</label>
-<input type="email" id="email" name="email"  placeholder="Email">
-<p class="error is-error">Please enter a valid email address.</p>
-</div>
+        <div>
+          <button
+            type="submit"
+            class="col-span-2 mt-4 h-12 max-w-min place-self-center rounded-sm bg-pink-100 text-black"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
 
-<div>
-<label for="comments" class="sr-only mt-5">Comments</label>
-<textarea id="comments" placeholder="Comments">
-</textarea>
-</div>
+    <footer class="text-center font-light text-black">
+      <a
+        href="https://www.linkedin.com/in/victoria-sternau-r-t-r-m-782621246"
+        class="bg-pink-100 opacity-90"
+        >LinkedIn</a
+      >
+      &
+      <a
+        href="mailto: victoria.sternau@student.swic.edu"
+        class="bg-pink-100 opacity-90"
+        >Send Email</a
+      >
+    </footer>
 
-<div>
-<button type="submit" class="bg-pink-100 col-span-2 mt-4 h-12 max-w-min place-self-center rounded-sm text-black">
-Submit</button>
-</div>
-
-</form>
-
-</main>
-
-
-  <footer class="text-center font-light text-black"> 
-<p> <a href="https://www.linkedin.com/in/victoria-sternau-r-t-r-m-782621246" class="bg-pink-100 opacity-90">LinkedIn</a> &
-  <a href = "mailto: victoria.sternau@student.swic.edu" class="bg-pink-100 opacity-90">Send Email</a>
-  </p>
-  
-  </footer>
-
-  <script src="./main.js" type="module"></script>
-
-</body>
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
