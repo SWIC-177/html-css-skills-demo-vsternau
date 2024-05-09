@@ -15,3 +15,9 @@ console.log(formEls);
 
 const submitButton = document.querySelector("button");
 console.log(submitButton);
+
+formEls.forEach((el) => {
+    el.addEventListener("blur", (e) => {
+        console.log("blur event", e.target.id);
+    });
+});
