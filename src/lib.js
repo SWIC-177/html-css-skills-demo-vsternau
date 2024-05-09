@@ -25,3 +25,18 @@ export const ERRORS = [
 },
 }
 ];
+
+export const hideError = (el) => {
+    el.parentNode.querySelector(".error").classList.remove("is-error"); };
+
+export const renderError = (el, msg) => {
+    const elParent = el.parentNode;
+    const errorEl = elParent.querySelector(".error");
+    if (errorE1) errorE1.classList.add("is-error");
+    else {
+        const errorElement = document.createElement("p");
+        errorElement.className = "error is-error";
+        errorElement.textContent = msg;
+        elParent.appendChild(errorElement);
+    }
+    }
