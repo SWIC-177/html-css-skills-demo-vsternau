@@ -15,7 +15,7 @@ export const ERRORS = [
     },
     { id: "email", msg: "Email address is required",
     validate(val) {
-        return val.includes("@");
+        return validator.isEmail(val);
     },
      },
     { id: "comments", 
@@ -28,7 +28,7 @@ export const ERRORS = [
 export const hideError = (el) => {
     el.parentNode.querySelector(".error")?.classList.remove("is-error");
   };
-  
+
 export const renderError = (el, msg) => {
     const elParent = el.parentNode;
     const errorEl = elParent.querySelector(".error");
