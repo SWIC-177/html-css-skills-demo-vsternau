@@ -3,14 +3,14 @@ export const ERRORS = [
         id: "firstname",
         msg: "First name is required",
         validate(val) {
-            return val.length > 10;
+            return val.length > 0 && val.length < 10;
         },
     },
     { 
         id: "lastname",
         msg: "Last name is required",
         validate(val) {
-            return val.length > 15;
+            return val.length > 0 && val.length < 15;
         },
     },
     { id: "email", msg: "Email address is required",
@@ -25,14 +25,14 @@ export const ERRORS = [
 },
 }
 ];
-
 export const hideError = (el) => {
-    el.parentNode.querySelector(".error").classList.remove("is-error"); };
-
+    el.parentNode.querySelector(".error")?.classList.remove("is-error");
+  };
+  
 export const renderError = (el, msg) => {
     const elParent = el.parentNode;
     const errorEl = elParent.querySelector(".error");
-    if (errorE1) errorE1.classList.add("is-error");
+    if (errorEl) errorEl.classList.add("is-error");
     else {
         const errorElement = document.createElement("p");
         errorElement.className = "error is-error";
