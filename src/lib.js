@@ -13,7 +13,8 @@ export const ERRORS = [
             return val.length > 0 && val.length < 15;
         },
     },
-    { id: "email", msg: "Email address is required",
+    { id: "email", 
+    msg: "Email address is required",
     validate(val) {
         return validator.isEmail(val);
     },
